@@ -48,7 +48,7 @@ TRAINING THE CLASSIFIER
 - Third, execute NaiveBayes.py, which will run the classifier and ask you to enter a sentence (simulating a tweet)
 - Finally, you will see if your sentence has a positive or negative feeling.
 
-NOTE: In some cases when you test a positive sentence (i.e. I am happy), and it shows you that is a negative sentence, this is essentially because in the training data didn't cover the words encountered in this tweet and the classifier has little knowledge to classify this tweet and most often the tweet gets assigned the default classification label. Therefore, training dataset is very crucial for the success of these classifiers. Anything below 100k of training tweets will give you poor results.
+NOTE: In some cases when you test a positive sentence (i.e. I am happy), and it shows you that is a negative sentence, this is essentially because in the training data didn't cover the words encountered in this tweet. So, the classifier has little knowledge to classify this tweet and most often the tweet gets assigned the default classification label. Therefore, training dataset is very crucial for the success of these classifiers. Anything below 100k of training tweets will give you poor results.
                                              
                                              
 
