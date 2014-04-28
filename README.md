@@ -43,7 +43,7 @@ TRAINING THE CLASSIFIER
 
                                              ***Running the program***
                                              
-- First, save the two files (StreamingTwitter.py and NaiveBayes.py) in the same folder.
+- First, save the three files (StreamingTwitter.py, StopWords.txt, and NaiveBayes.py) in the same folder.
 - Second, execute the file StreamingTwitter.py, which will create your dataset.
 - Third, execute NaiveBayes.py, which will run the classifier and ask you to enter a sentence (simulating a tweet)
 - Finally, you will see if your sentence has a positive or negative feeling.
