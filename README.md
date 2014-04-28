@@ -3,9 +3,9 @@ Twitter-Sentiment-Analysis
 
 Twitter Sentiment Analysis | Naive Bayes Classifier 
 
-I created this Twitter sentiment analysis for research purposes. I was interested in comparing the accuracy of a result being positive or negative when using different classifiers. In this example, I implemented Naive Bayes classifier using Python, and Tweepy and NLTK libraries. Currently I am working with Support Vector Machine and Decision Tree classifiers, which I will be positng here later. 
+I created this Twitter sentiment analysis for research purposes. I was interested in comparing the accuracy of a result being positive or negative when using different classifiers. In this example, I implemented Naive Bayes classifier using Python, and Tweepy and NLTK libraries. Currently I am working with Support Vector Machine and Decision Tree classifiers, which I will be posting here later. 
 
-Intorduction 
+Introduction 
 
 Tweepy | There are excellent tutorials in its website http://www.tweepy.org 
 
