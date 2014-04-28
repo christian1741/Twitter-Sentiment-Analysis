@@ -25,14 +25,28 @@ When trainning a classifier, supervised learning usually requires hand-labeled t
 
 CREATING YOUR OWN DATASET
 
-- I decided to create my own dataset based on emoticons such as :) and :(  
+- I decided to create my own dataset based on emoticons such as :) and :( Then, I deleted them. Stripping out the        emoticons causes the classifier to learn from the other features present in the tweet. The classifier uses these non-   emoticon features to determine the sentiment.
 - I streamed thoudands of tweets and stored them into a file (I used a file, but you can store them into a database)
 - Preprocess tweets
   * Lower case - I converted the tweets to lower case 
   * URLs - I eliminated all the URLs
   * #hashtag - hash tags can give us some useful information, so I replaced them with the exact same word without the      hash.
   * Punctuations and additional white spaces - I decided to remove punctuation at the starting and ending of the           tweets.
+- Feature Reduction (For example: Tokenization, Removing Stopwords, Twitter symbols, and Repeated Letters)
 
 
-TRAINING THE CLASSIFIER (Naive Bayes)
+TRAINING THE CLASSIFIER 
+
+- Naive Bayes is the classifier that I am using to create a sentiment analizer. 
+- I used the Naïve Bayes method in the NLTK library to train and classify.
+- At this point, I have a training set, so all I need to do is instantiate a classifier and classify test tweets.
+
+                                             ***Running the program***
+                                             
+- First, save the two files (StreamingTwitter.py and NaiveBayes.py) in the same folder.
+- Second, execute the file StreamingTwitter.py, which will create your dataset
+- Third, execute NaiveBayes.py, which will run the classifier and ask you to enter a sentence (simulating a tweet)
+- Finally, you will see if your sentence has a positive or negative feeling. 
+                                             
+                                             
 
