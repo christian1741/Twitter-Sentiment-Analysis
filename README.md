@@ -28,6 +28,10 @@ CREATING YOUR OWN DATASET
 - I decided to create my own dataset based on emoticons such as :) and :(  
 - I streamed thoudands of tweets and stored them into a file (I used a file, but you can store them into a database)
 - Preprocess tweets
+  * Lower case - I converted the tweets to lower case 
+  * URLs - I eliminated all the URLs
+  * #hashtag - hash tags can give us some useful information, so I replaced them with the exact same word without the      hash.
+  * Punctuations and additional white spaces - I decided to remove punctuation at the starting and ending of the           tweets.
 
 
 TRAINING THE CLASSIFIER (Naive Bayes)
