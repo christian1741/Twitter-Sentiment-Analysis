@@ -14,7 +14,7 @@ In this example, I implemented Naive Bayes classifier using Python, Tweepy, and 
 
 In order to build a Twitter sentiment analyzer, first we need to understand the right tools and methods. Machine learning is one such tool where people have developed various methods to classify. Classifiers may or may not need training data. 
 
-When trainning a classifier, supervised learning usually requires hand-labeled training data. With the large range of topics discussed on Twitter, it would be very difficult to manually collect and label enough data to train a sentiment classifier for tweets. One solution I propose is to use distant supervision, in which the training data consists of tweets with emoticons. The emoticons serve as noisy labels. For instance, :) in a tweet indicates that the tweet contains positive sentiment and :( indicates that the tweet contains negative sentiment. With the help of the Twitter API, it is easy to extract large amounts of tweets with emoticons in them. This is a significant improvement over the many hours it may otherwise take to hand-label training data.
+When training a classifier, supervised learning usually requires hand-labeled training data. With the large range of topics discussed on Twitter, it would be very difficult to manually collect and label enough data to train a sentiment classifier for tweets. One solution I propose is to use distant supervision, in which the training data consists of tweets with emoticons. The emoticons serve as noisy labels. For instance, :) in a tweet indicates that the tweet contains positive sentiment and :( indicates that the tweet contains negative sentiment. With the help of the Twitter API, it is easy to extract large amounts of tweets with emoticons in them. This is a significant improvement over the many hours it may otherwise take to hand-label training data.
 
                                            ***Implementation Details***
 
@@ -26,7 +26,7 @@ When trainning a classifier, supervised learning usually requires hand-labeled t
 CREATING YOUR OWN DATASET
 
 - I decided to create my own dataset based on emoticons such as :) and :( Then, I deleted them. Stripping out the        emoticons causes the classifier to learn from the other features present in the tweet. The classifier uses these non-   emoticon features to determine the sentiment.
-- I streamed thoudands of tweets and stored them into a file (I used a file, but you can store them into a database)
+- I streamed thousands of tweets and stored them into a file (I used a file, but you can store them into a database)
 - Preprocess tweets
   * Lower case - I converted the tweets to lower case 
   * URLs - I eliminated all the URLs
@@ -37,7 +37,7 @@ CREATING YOUR OWN DATASET
 
 TRAINING THE CLASSIFIER 
 
-- Naive Bayes is the classifier that I am using to create a sentiment analizer. 
+- Naive Bayes is the classifier that I am using to create a sentiment analyzer. 
 - I used the Naïve Bayes method in the NLTK library to train and classify.
 - At this point, I have a training set, so all I need to do is instantiate a classifier and classify test tweets.
 
